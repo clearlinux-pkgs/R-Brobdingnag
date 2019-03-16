@@ -1,8 +1,2 @@
 # This file contains recursive sources that require this package
 R-bridgesampling
-R-brms
-R-broom
-R-caret
-R-modelr
-R-recipes
-R-tidyverse
