@@ -4,7 +4,7 @@
 #
 Name     : R-Brobdingnag
 Version  : 1.2.6
-Release  : 27
+Release  : 28
 URL      : https://cran.r-project.org/src/contrib/Brobdingnag_1.2-6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Brobdingnag_1.2-6.tar.gz
 Summary  : Very Large Numbers in R
