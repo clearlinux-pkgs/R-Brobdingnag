@@ -4,35 +4,37 @@
 #
 Name     : R-Brobdingnag
 Version  : 1.2.6
-Release  : 28
+Release  : 29
 URL      : https://cran.r-project.org/src/contrib/Brobdingnag_1.2-6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Brobdingnag_1.2-6.tar.gz
 Summary  : Very Large Numbers in R
 Group    : Development/Tools
 License  : GPL-2.0
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
-No detailed description available
+using their natural logarithms, plus a logical flag indicating
+        sign.  The package includes a vignette that gives a
+        step-by-step introduction to using S4 methods.
 
 %prep
 %setup -q -c -n Brobdingnag
+cd %{_builddir}/Brobdingnag
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571806062
+export SOURCE_DATE_EPOCH=1589516042
 
 %install
-export SOURCE_DATE_EPOCH=1571806062
+export SOURCE_DATE_EPOCH=1589516042
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
